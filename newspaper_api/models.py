@@ -22,3 +22,6 @@ class Newspaper(models.Model):
     def get_word_classification(self):
         self.label = "Good average"
         self.text = "This is an impressive feature to add!"
+
+    def __str__(self):
+        return self.title
